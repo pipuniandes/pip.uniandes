@@ -17,7 +17,11 @@ export default function SemillerosPage() {
   useEffect(() => {
     async function fetchSemilleros() {
       const supabase = getSupabaseClient()
-      const { data, error } = await supabase.from("semilleros").select("*").order("name", { ascending: true })
+      const { data, error } = await supabase
+        .from("semilleros")
+        .select("*")
+        .eq("status", "Activo")
+        .order("name", { ascending: true })
 
       if (error) {
         console.error("[v0] Error fetching semilleros:", error)
@@ -25,6 +29,7 @@ export default function SemillerosPage() {
         return
       }
 
+      console.log("[v0] Semilleros activos cargados:", data?.length || 0)
       setSemilleros((data as Semillero[]) || [])
       setFilteredSemilleros((data as Semillero[]) || [])
       setLoading(false)
@@ -61,8 +66,8 @@ export default function SemillerosPage() {
                 Semilleros de Investigación
               </h1>
               <p className="text-pretty text-lg md:text-xl">
-                Descubre los espacios de investigación y creación disponibles para estudiantes de pregrado en la
-                Universidad de los Andes
+                Descubre los 76 espacios activos de investigación y creación disponibles para estudiantes de pregrado en
+                la Universidad de los Andes
               </p>
             </div>
           </div>
@@ -74,7 +79,7 @@ export default function SemillerosPage() {
             <div className="flex flex-wrap justify-center gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-accent-foreground">{semilleros.length}</div>
-                <div className="text-sm text-accent-foreground/80">Semilleros totales</div>
+                <div className="text-sm text-accent-foreground/80">Semilleros activos</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-accent-foreground">{fundedCount}</div>
@@ -97,7 +102,7 @@ export default function SemillerosPage() {
 
             {loading ? (
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {[...Array(6)].map((_, i) => (
+                {[...Array(9)].map((_, i) => (
                   <div key={i} className="h-[400px] animate-pulse rounded-lg bg-muted" />
                 ))}
               </div>

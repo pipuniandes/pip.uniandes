@@ -34,22 +34,21 @@ export function SemilleroCard({ semillero }: SemilleroCardProps) {
           <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
             {semillero.faculty}
           </span>
-          <span className="inline-block rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">
-            {semillero.area}
-          </span>
         </div>
         <h3 className="mb-2 text-balance text-xl font-bold text-foreground">{semillero.name}</h3>
         <p className="mb-4 text-pretty text-sm text-muted-foreground line-clamp-3">{semillero.description}</p>
         <div className="space-y-2 text-sm">
           {semillero.coordinator && (
             <div className="flex items-center gap-2 text-muted-foreground">
-              <User className="h-4 w-4" />
+              <User className="h-4 w-4 flex-shrink-0" />
+              <span className="font-medium">Responsable:</span>
               <span>{semillero.coordinator}</span>
             </div>
           )}
           {semillero.email && (
             <div className="flex items-center gap-2 text-muted-foreground">
-              <Mail className="h-4 w-4" />
+              <Mail className="h-4 w-4 flex-shrink-0" />
+              <span className="font-medium">Contacto:</span>
               <span className="truncate text-xs">{semillero.email}</span>
             </div>
           )}

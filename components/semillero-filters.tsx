@@ -10,13 +10,14 @@ interface SemilleroFiltersProps {
 const faculties = [
   "Todas las Facultades",
   "Administración",
+  "ArquiDis",
   "Artes y Humanidades",
-  "Arquitectura y Diseño",
+  "CIDER",
   "Ciencias",
   "Ciencias Sociales",
   "Derecho",
   "Economía",
-  "Educación",
+  "Gobierno",
   "Ingeniería",
   "Medicina",
 ]

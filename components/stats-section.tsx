@@ -1,9 +1,9 @@
 export function StatsSection() {
   const stats = [
+    { number: "76", label: "Semilleros activos de investigación" },
     { number: "18", label: "Semilleros financiados por la vicerrectoría" },
-    { number: "156", label: "Semilleros de la universidad" },
-    { number: "45", label: "Publicaciones en 2023" },
-    { number: "78", label: "Ponencias presentadas" },
+    { number: "12", label: "Facultades participantes" },
+    { number: "250+", label: "Estudiantes investigadores activos" },
   ]
 
   return (
