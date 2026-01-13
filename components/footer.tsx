@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { ChevronUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -16,6 +17,13 @@ export function Footer() {
       <div className="container px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
+            <Image
+              src="/images/logo-uniandes-en-negro.png"
+              alt="Universidad de los Andes"
+              width={200}
+              height={60}
+              className="mb-4 h-12 w-auto"
+            />
             <h3 className="mb-4 text-lg font-semibold text-primary">Programa de Investigación en Pregrado</h3>
             <p className="text-sm text-muted-foreground">
               Fomentando la investigación y creación desde el pregrado en la Universidad de los Andes

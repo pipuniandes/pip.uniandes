@@ -13,10 +13,10 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/universidad-de-los-andes-logo.jpg"
+            src="/images/logo-uniandes-en-negro.png"
             alt="Universidad de los Andes"
-            width={120}
-            height={40}
+            width={180}
+            height={50}
             className="h-10 w-auto"
           />
         </Link>
