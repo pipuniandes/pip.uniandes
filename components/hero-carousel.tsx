@@ -19,32 +19,32 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    title: "Grabación Taller #4 PIP 2024-1",
-    description: "Revive los mejores momentos del último taller de investigación en pregrado",
-    image: "/students-in-research-workshop-at-university.jpg",
+    title: "ERA 2048: Uniandes imagina, conecta y crea el futuro",
+    description: "En Uniandes creemos que imaginar futuros, discutir alternativas, crear soluciones y definir los caminos de la investigación es fundamental para transformar realidades.",
+    image: "/images/era-2048-estudiantes-uniandes.png",
     cta: {
-      text: "Ver Grabación",
-      href: "#",
+      text: "Conocer más",
+      href: "https://investigacioncreacion.uniandes.edu.co/",
     },
   },
   {
     id: 2,
-    title: "Convocatoria 2024-1 Abierta",
-    description: "Inscríbete ahora y forma parte de los semilleros de investigación",
-    image: "/university-campus-aerial-view-modern.jpg",
+    title: "GoFest 2025: Uniandes y el futuro de la innovación",
+    description: "La Universidad de los Andes participó activamente en el GoFest – Genera Summit 2025, reuniendo a líderes nacionales e internacionales del ecosistema de innovación.",
+    image: "/images/gofest-innovacion-uniandes.jpg",
     cta: {
-      text: "Inscríbete Ya",
-      href: "/inscripcion",
+      text: "Ver más",
+      href: "https://investigacioncreacion.uniandes.edu.co/",
     },
   },
   {
     id: 3,
-    title: "Resultados Destacados 2023",
-    description: "Conoce los logros de nuestros investigadores en pregrado",
-    image: "/research-laboratory-students-working.jpg",
+    title: "Reto Semilleros: Un impulso a la investigación",
+    description: "El Reto Semilleros Uniandes potencia los semilleros de investigación y creación, transformando ideas en proyectos de alto impacto para la sociedad.",
+    image: "/images/reto-semilleros-investigacion.jpg",
     cta: {
-      text: "Ver Más",
-      href: "#noticias",
+      text: "Inscríbete",
+      href: "/inscripcion",
     },
   },
 ]

@@ -1,4 +1,7 @@
+"use client"
+
 import type React from "react"
+import { useState } from "react"
 import { Calendar, User, Download, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
@@ -16,8 +19,29 @@ const fileTypeIcons: Record<string, React.ReactNode> = {
 }
 
 export function DocumentCard({ document }: DocumentCardProps) {
+  const [downloading, setDownloading] = useState(false)
   const fileType = document.file_type?.toUpperCase() || "FILE"
   const icon = fileTypeIcons[fileType] || <FileText className="h-5 w-5 text-muted-foreground" />
+
+  const handleDownload = async () => {
+    try {
+      setDownloading(true)
+
+      // Crear un link temporal y descargar el archivo desde public/
+      const link = globalThis.document.createElement("a")
+      link.href = document.file_url
+      link.download = `${document.title}.pdf`
+      link.target = "_blank"
+      globalThis.document.body.appendChild(link)
+      link.click()
+      globalThis.document.body.removeChild(link)
+    } catch (error) {
+      console.error("Error downloading document:", error)
+      alert("Error al descargar el documento. Por favor intenta nuevamente.")
+    } finally {
+      setDownloading(false)
+    }
+  }
 
   return (
     <Card className="flex flex-col transition-shadow hover:shadow-md">
@@ -59,11 +83,9 @@ export function DocumentCard({ document }: DocumentCardProps) {
         </div>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button asChild className="w-full bg-transparent" variant="outline">
-          <a href={document.file_url} download className="flex items-center gap-2">
-            <Download className="h-4 w-4" />
-            Descargar
-          </a>
+        <Button onClick={handleDownload} disabled={downloading} className="w-full bg-transparent" variant="outline">
+          <Download className="h-4 w-4" />
+          {downloading ? "Descargando..." : "Descargar"}
         </Button>
       </CardFooter>
     </Card>

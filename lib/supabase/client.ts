@@ -11,3 +11,8 @@ export function getSupabaseClient() {
 
   return client
 }
+
+// Alias for compatibility
+export function createClient() {
+  return getSupabaseClient()
+}

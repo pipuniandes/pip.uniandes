@@ -1,15 +1,16 @@
 export function FacultyStats() {
   const faculties = [
-    { name: "Administración", count: 0 },
-    { name: "Artes y Humanidades", count: 23 },
-    { name: "Arquitectura y Diseño", count: 15 },
-    { name: "Ciencias", count: 18 },
-    { name: "Ciencias Sociales", count: 9 },
-    { name: "Derecho", count: 7 },
+    { name: "Administración", count: 2 },
+    { name: "Artes y Humanidades", count: 33 },
+    { name: "Arquitectura y Diseño", count: 5 },
+    { name: "Ciencias", count: 3 },
+    { name: "Ciencias Sociales", count: 7 },
+    { name: "Derecho", count: 5 },
     { name: "Economía", count: 5 },
-    { name: "Educación", count: 9 },
-    { name: "Ingeniería", count: 28 },
-    { name: "Medicina", count: 12 },
+    { name: "Ingeniería", count: 3 },
+    { name: "Medicina", count: 10 },
+    { name: "Gobierno", count: 1 },
+    { name: "CIDER", count: 1 },
   ]
 
   return (
@@ -18,7 +19,7 @@ export function FacultyStats() {
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold text-accent-foreground md:text-4xl">Divulgación del conocimiento</h2>
           <p className="mx-auto max-w-3xl text-balance text-lg text-accent-foreground/80">
-            Conoce la distribución de semilleros de investigación por facultad en la Universidad de los Andes
+            Conoce la distribución de 76 semilleros de investigación activos por facultad en la Universidad de los Andes
           </p>
         </div>
 

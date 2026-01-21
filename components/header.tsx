@@ -29,8 +29,11 @@ export function Header() {
           <Link href="/semilleros" className="text-sm font-medium text-foreground transition-colors hover:text-primary">
             Semilleros
           </Link>
-          <Link href="/documentos" className="text-sm font-medium text-foreground transition-colors hover:text-primary">
-            Documentos
+          <Link href="/consejeros" className="text-sm font-medium text-foreground transition-colors hover:text-primary">
+            Consejeros
+          </Link>
+          <Link href="/preguntas-frecuentes" className="text-sm font-medium text-foreground transition-colors hover:text-primary">
+            FAQ
           </Link>
           <Link
             href="/inscripcion"
@@ -60,8 +63,11 @@ export function Header() {
                 <Link href="/semilleros" className="text-lg font-medium text-foreground hover:text-primary">
                   Semilleros
                 </Link>
-                <Link href="/documentos" className="text-lg font-medium text-foreground hover:text-primary">
-                  Documentos
+                <Link href="/consejeros" className="text-lg font-medium text-foreground hover:text-primary">
+                  Consejeros
+                </Link>
+                <Link href="/preguntas-frecuentes" className="text-lg font-medium text-foreground hover:text-primary">
+                  Preguntas Frecuentes
                 </Link>
                 <Link href="/inscripcion" className="text-lg font-medium text-foreground hover:text-primary">
                   Inscripción
