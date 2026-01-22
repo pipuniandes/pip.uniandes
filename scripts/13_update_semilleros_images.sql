@@ -51,6 +51,11 @@ UPDATE semilleros
 SET image_url = '/images/polar-polinizacion-paramo.png'
 WHERE name ILIKE '%POLAR%' OR name ILIKE '%Polinización%';
 
+-- Ensamble de tango (Activo - Artes y Humanidades)
+UPDATE semilleros 
+SET image_url = '/images/ensamble-de-tango.jpg'
+WHERE name ILIKE '%tango%' OR name ILIKE '%Ensamble de tango%';
+
 -- Nota: Los siguientes semilleros NO están activos, por lo tanto no se les asigna imagen:
 -- - Investigaciones Biomédicas
 -- - Nanomateriales para aplicaciones en la industria electrónica
@@ -60,3 +65,11 @@ WHERE name ILIKE '%POLAR%' OR name ILIKE '%Polinización%';
 -- - Neurofisiología del ejercicio
 -- - Salud Visible
 -- - Organizaciones y paz
+-- - Semillero en Sistemas Agroalimentarios Sostenibles
+-- - STEMed
+-- - Trabajo y Derecho
+-- - Semillero de Herpetología (SHUA)
+-- - Semillero Sierra Nevada de Santa Marta
+-- - Semillero del Pacífico
+-- - Semillero sobre el perdón en el contexto transicional colombiano
+-- - Semillero IBIODESIGN (dispositivos médicos y biodiseño)
