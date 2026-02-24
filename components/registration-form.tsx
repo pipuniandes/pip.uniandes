@@ -82,15 +82,15 @@ function RegistrationFormContent() {
 
       const fileExt = imageFile.name.split(".").pop()
       const fileName = `${Math.random().toString(36).substring(2)}-${Date.now()}.${fileExt}`
-      const filePath = `semilleros/${fileName}`
+      const filePath = `${fileName}`
 
-      const { error: uploadError, data } = await supabase.storage.from("public").upload(filePath, imageFile)
+      const { error: uploadError } = await supabase.storage.from("semilleros").upload(filePath, imageFile)
 
       if (uploadError) throw uploadError
 
       const {
         data: { publicUrl },
-      } = supabase.storage.from("public").getPublicUrl(filePath)
+      } = supabase.storage.from("semilleros").getPublicUrl(filePath)
 
       return publicUrl
     } catch (err) {
@@ -110,32 +110,53 @@ function RegistrationFormContent() {
       let imageUrl = null
 
       if (imageFile) {
+        console.log("[v0] about to upload image, imageFile:", imageFile?.name)
         imageUrl = await uploadImage()
       }
 
       const supabase = getSupabaseClient()
 
-      const { error: insertError } = await supabase.from("semillero_registrations").insert([
-        {
-          ...formData,
-          semillero_image_url: imageUrl,
-          status: "pending",
-        },
-      ])
+      console.log("[v0] about to insert registration")
+      const { data, error: insertError } = await supabase
+  .from("semillero_registrations")
+  .insert([
+    {
+      ...formData,
+      semillero_image_url: imageUrl,
+      status: "pending",
+    },
+  ])
+  .select()
 
-      if (insertError) throw insertError
+console.log("[v0] insert data:", data)
+console.log("[v0] insert error:", insertError)
+if (insertError) {
+  console.log("[v0] insertError keys:", Object.getOwnPropertyNames(insertError))
+  console.log("[v0] insertError message:", insertError.message)
+  console.log("[v0] insertError details:", (insertError as any).details)
+  console.log("[v0] insertError hint:", (insertError as any).hint)
+  console.log("[v0] insertError code:", (insertError as any).code)
+  throw insertError
+}
+console.log("[v0] insert done successfully")
 
       setSuccess(true)
 
       setTimeout(() => {
         router.push("/")
       }, 3000)
-    } catch (err) {
-      console.error("[v0] Registration error:", err)
-      setError("Hubo un error al procesar tu inscripción. Por favor intenta de nuevo.")
-    } finally {
-      setLoading(false)
-    }
+    } catch (err: any) {
+  console.error("[v0] Registration error raw:", err)
+  console.error("[v0] err keys:", Object.getOwnPropertyNames(err || {}))
+  console.error("[v0] err toString:", String(err))
+  console.error("[v0] err.message:", err?.message)
+console.error("[v0] err.code:", err?.code)
+console.error("[v0] err.details:", err?.details)
+console.error("[v0] err.hint:", err?.hint)
+  setError(err?.message || "Hubo un error al procesar tu inscripción. Por favor intenta de nuevo.")
+} finally {
+  setLoading(false)
+}
   }
 
   if (success) {
