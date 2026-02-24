@@ -14,7 +14,7 @@ export async function NewsSection() {
 
   return (
     <section id="noticias" className="py-16 md:py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-8 lg:px-12">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">Últimas Noticias</h2>
           <p className="mx-auto max-w-2xl text-pretty text-lg text-muted-foreground">

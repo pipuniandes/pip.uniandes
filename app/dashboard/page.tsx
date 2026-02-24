@@ -103,7 +103,7 @@ const reject = async (id: string) => {
       <Header />
       <main className="flex-1 bg-muted/30">
         <section className="border-b border-border bg-background py-8">
-          <div className="container flex items-center justify-between px-4 md:px-6">
+          <div className="container flex items-center justify-between px-4 md:px-8 lg:px-12">
             <div>
               <h1 className="text-3xl font-bold text-foreground">Panel de Administración</h1>
               <p className="text-muted-foreground">Gestiona las inscripciones del PIP</p>
@@ -115,7 +115,7 @@ const reject = async (id: string) => {
         </section>
 
         <section className="py-8">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mb-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">

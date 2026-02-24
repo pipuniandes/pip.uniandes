@@ -86,7 +86,7 @@ export function HeroCarousel() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40" />
 
           <div className="absolute inset-0 flex items-center">
-            <div className="container px-4 md:px-6">
+            <div className="container px-4 md:px-8 lg:px-12">
               <div className="max-w-2xl text-balance">
                 <h1 className="mb-4 text-4xl font-bold text-primary-foreground md:text-5xl lg:text-6xl">
                   {slide.title}

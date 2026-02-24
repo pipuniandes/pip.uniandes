@@ -14,7 +14,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border bg-primary text-primary-foreground">
-      <div className="container px-4 py-12 md:px-6">
+      <div className="container px-4 py-12 md:px-8 lg:px-12">
         <div className="grid gap-8 md:grid-cols-4">
           {/* Logo y descripción */}
           <div className="md:col-span-1">

@@ -15,7 +15,7 @@ export function FacultyStats() {
 
   return (
     <section className="bg-accent py-16 md:py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-8 lg:px-12">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold text-accent-foreground md:text-4xl">Divulgación del conocimiento</h2>
           <p className="mx-auto max-w-3xl text-balance text-lg text-accent-foreground/80">
