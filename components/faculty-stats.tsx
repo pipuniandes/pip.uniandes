@@ -4,13 +4,12 @@ export function FacultyStats() {
     { name: "Artes y Humanidades", count: 33 },
     { name: "Arquitectura y Diseño", count: 5 },
     { name: "Ciencias", count: 3 },
-    { name: "Ciencias Sociales", count: 7 },
+    { name: "Ciencias Sociales", count: 8 },
     { name: "Derecho", count: 5 },
     { name: "Economía", count: 5 },
     { name: "Ingeniería", count: 3 },
     { name: "Medicina", count: 10 },
     { name: "Gobierno", count: 1 },
-    { name: "CIDER", count: 1 },
   ]
 
   return (

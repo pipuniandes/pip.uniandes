@@ -12,7 +12,6 @@ const faculties = [
   "Administración",
   "ArquiDis",
   "Artes y Humanidades",
-  "CIDER",
   "Ciencias",
   "Ciencias Sociales",
   "Derecho",
