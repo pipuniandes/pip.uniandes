@@ -8,7 +8,7 @@ export function StatsSection() {
 
   return (
     <section className="bg-secondary py-12 md:py-20">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-8 lg:px-12">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">Semilleros de Investigación</h2>
           <p className="mx-auto max-w-3xl text-balance text-lg text-muted-foreground">

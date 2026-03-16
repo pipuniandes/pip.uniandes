@@ -61,7 +61,7 @@ export default function ConsejerosPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-primary py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="mb-4 text-3xl font-bold tracking-tight text-primary-foreground md:text-5xl">
                 ¿Qué es un Consejero de Investigación?
@@ -75,7 +75,7 @@ export default function ConsejerosPage() {
 
         {/* Definition Section */}
         <section className="py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-4xl">
               <div className="grid gap-12 md:grid-cols-2 md:items-center">
                 <div>
@@ -114,7 +114,7 @@ export default function ConsejerosPage() {
 
         {/* Roles Section */}
         <section className="bg-muted/30 py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mb-12 text-center">
               <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
                 Funciones del Consejero
@@ -142,7 +142,7 @@ export default function ConsejerosPage() {
 
         {/* Benefits Section */}
         <section className="py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-4xl">
               <div className="grid gap-12 md:grid-cols-2 md:items-center">
                 <div className="order-2 md:order-1">
@@ -183,7 +183,7 @@ export default function ConsejerosPage() {
 
         {/* CTA Section */}
         <section className="bg-primary py-16">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="mb-4 text-2xl font-bold text-primary-foreground md:text-3xl">
                 ¿Quieres saber más?

@@ -64,7 +64,7 @@ export default function DocumentosPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-r from-primary to-primary/80 py-16 text-primary-foreground md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-3xl text-center">
               <div className="mb-6 flex justify-center">
                 <div className="rounded-full bg-accent p-4">
@@ -81,7 +81,7 @@ export default function DocumentosPage() {
 
         {/* Stats Bar */}
         <section className="border-b border-border bg-accent py-8">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="flex flex-wrap justify-center gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-accent-foreground">{documents.length}</div>
@@ -101,7 +101,7 @@ export default function DocumentosPage() {
 
         {/* Filters and Results */}
         <section className="py-12 md:py-16">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mb-8">
               <DocumentFilters onFilterChange={setFilters} />
             </div>
@@ -142,7 +142,7 @@ export default function DocumentosPage() {
 
         {/* Help Section */}
         <section className="border-t border-border bg-secondary py-12">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="mb-4 text-2xl font-bold text-foreground">¿No encuentras lo que buscas?</h2>
               <p className="mb-6 text-muted-foreground">

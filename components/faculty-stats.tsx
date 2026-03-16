@@ -4,18 +4,17 @@ export function FacultyStats() {
     { name: "Artes y Humanidades", count: 33 },
     { name: "Arquitectura y Diseño", count: 5 },
     { name: "Ciencias", count: 3 },
-    { name: "Ciencias Sociales", count: 7 },
+    { name: "Ciencias Sociales", count: 8 },
     { name: "Derecho", count: 5 },
     { name: "Economía", count: 5 },
     { name: "Ingeniería", count: 3 },
     { name: "Medicina", count: 10 },
     { name: "Gobierno", count: 1 },
-    { name: "CIDER", count: 1 },
   ]
 
   return (
     <section className="bg-accent py-16 md:py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-8 lg:px-12">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold text-accent-foreground md:text-4xl">Divulgación del conocimiento</h2>
           <p className="mx-auto max-w-3xl text-balance text-lg text-accent-foreground/80">

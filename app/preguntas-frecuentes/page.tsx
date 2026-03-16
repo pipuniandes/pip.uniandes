@@ -104,7 +104,7 @@ export default function PreguntasFrecuentesPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-primary py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="mb-4 text-3xl font-bold tracking-tight text-primary-foreground md:text-5xl">
                 Preguntas Frecuentes
@@ -118,7 +118,7 @@ export default function PreguntasFrecuentesPage() {
 
         {/* FAQ Investigación Section */}
         <section className="py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-2xl font-bold text-foreground md:text-3xl">
                 ¿Cómo investigo en pregrado?
@@ -141,7 +141,7 @@ export default function PreguntasFrecuentesPage() {
 
         {/* FAQ Creación Section */}
         <section className="bg-muted/30 py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-8 text-2xl font-bold text-foreground md:text-3xl">
                 ¿Cómo creo en pregrado?
@@ -164,7 +164,7 @@ export default function PreguntasFrecuentesPage() {
 
         {/* Contact CTA */}
         <section className="py-16 md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-2xl rounded-2xl bg-muted/50 p-8 text-center">
               <h2 className="mb-4 text-2xl font-bold text-foreground">
                 ¿No encontraste lo que buscabas?

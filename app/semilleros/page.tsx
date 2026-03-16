@@ -60,7 +60,7 @@ export default function SemillerosPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-r from-primary to-primary/80 py-16 text-primary-foreground md:py-24">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="mb-4 text-balance text-4xl font-bold md:text-5xl lg:text-6xl">
                 Semilleros de Investigación
@@ -75,7 +75,7 @@ export default function SemillerosPage() {
 
         {/* Stats Bar */}
         <section className="border-b border-border bg-accent py-8">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="flex flex-wrap justify-center gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-accent-foreground">{semilleros.length}</div>
@@ -95,7 +95,7 @@ export default function SemillerosPage() {
 
         {/* Filters and Results */}
         <section className="py-12 md:py-16">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-8 lg:px-12">
             <div className="mb-8">
               <SemilleroFilters onFilterChange={setFilters} />
             </div>
